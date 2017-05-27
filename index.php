@@ -1,19 +1,12 @@
 <?php
+require_once('config.php');
+
 //start a session as soon as page load // not a good practice, 
 // start a session/keep it active only if contents in the page really needs it
-
 if(!isset($_SESSION)){
 	session_start();
 }
 
-//enter database connection credentials
-//should be kept in a different file, named someting like config.php
-$db = new mysqli('localhost', 'root', '', 'gdg1') or mysqli_connect_errno();
-
-//if connection failed, show error, and stop loading the page
-if($db->connect_error){
-	die('Connect Error: ' . $db->connect_error);
-}
 
 $errors = [];
 $messages = [];
