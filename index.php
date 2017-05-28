@@ -136,7 +136,7 @@ if(isset($_GET['logout'])){
 		if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']){
 			echo $_SESSION['name'];
 		}else{
-			echo 'Developer';
+			echo 'Coder';
 		}
 		?>,</h1>
         <p>Web Applications are awesome. It supports various devices. All they need are internet connection and web-browser. No computational load on the client and secure as HELL.</p>
