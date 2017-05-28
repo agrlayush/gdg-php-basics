@@ -5,7 +5,12 @@ define('MYSQL_USER', 'sql12176876');
 define('MYSQL_PASSWORD', 'WGalxjmTb9');
 define('MYSQL_DB', 'sql12176876');
 
-
+/*
+define('MYSQL_HOST', 'localhost' );
+define('MYSQL_USER', 'gdg');
+define('MYSQL_PASSWORD', '2017');
+define('MYSQL_DB', 'gdg17');
+*/
 //enter database connection credentials
 //should be kept in a different file, named someting like config.php
 $db = new mysqli(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB) or mysqli_connect_errno();
